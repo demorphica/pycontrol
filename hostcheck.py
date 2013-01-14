@@ -62,7 +62,7 @@ def check(n):
         load=loadcheck(runtime)
         syslog.syslog(syslog.LOG_ALERT, "Average load for this test run is "+str(load)+"%")
         loadlastduration.append(load)
-        syslog.syslog(syslog.LOG_ALERT, "Will resume test run after "+interval+" seconds ...")
+        syslog.syslog(syslog.LOG_ALERT, "Will resume test run after "+str(interval)+" seconds ...")
         sleep(interval)
     avgloadlastduration=sum(loadlastduration) / float(len(loadlastduration))
     syslog.syslog(syslog.LOG_ALERT, "Average load for all test runs is "+str(avgloadlastduration)+"%")
@@ -82,7 +82,7 @@ def main():
             syslog.syslog(syslog.LOG_ALERT, "Host "+host+" is Working ...")
             sys.exit()
         elif status <= 1.0:
-            syslog.syslog(syslog.LOG_ALERT, "Host "+host+" has been Idle for "+duration+" seconds now")
+            syslog.syslog(syslog.LOG_ALERT, "Host "+host+" has been Idle for "+str(duration)+" seconds now")
             syslog.syslog(syslog.LOG_ALERT, "There is no demand for host "+host+". Sending sleep signal to host "+host)
             dosleep(user, host)
             sys.exit()
