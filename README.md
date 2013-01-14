@@ -12,6 +12,7 @@ duration=int(sys.argv[3])
 runtime=int(sys.argv[4])
 interval=int(sys.argv[5])
 
+
 eg. /root/hostcheck.py windowsusername hostname 60 10 5
 
 You can setup cron to run like this for eg.:
