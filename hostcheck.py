@@ -46,9 +46,9 @@ def pingcheck(name):
         elif int(packetloss) == 0:
                 return 1
 
-def dohybridsleep(id, name):
+def dohybridsleep(username, hostname):
         try:
-                 p_sleep = subprocess.Popen(shlex.split("/usr/bin/ssh "+id+"@"+name+" psshutdown -d -t 01"), stdout=subprocess.PIPE)
+                 p_sleep = subprocess.Popen(shlex.split("/usr/bin/ssh "+username+"@"+hostname+" psshutdown -d -t 01"), stdout=subprocess.PIPE)
                  out, err = p_sleep.communicate()
                  return(1)
         except ValueError:
