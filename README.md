@@ -44,7 +44,7 @@ Use GPLv3
 TODOs
 =========
 
-Add REST over webpy, control with curl
-Daemonize
-add startapplication(name) functionality to start application "name" on the remote host. (eg. start XBMC after waking, stop Virtualbox VMs before sleeping)
-add demand enumeration (eg. wake sleeping host if network sees a UPNP request, or sleeping host is pinged by someone)
+Add REST over webpy, control with curl<br>
+Daemonize<br>
+add startapplication(name) functionality to start application "name" on the remote host. (eg. start XBMC after waking, stop Virtualbox VMs before sleeping)<br>
+add demand enumeration (eg. wake sleeping host if network sees a UPNP request, or sleeping host is pinged by someone)<br>
