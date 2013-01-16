@@ -35,3 +35,16 @@ or logread -f
 depending on which linux distro you are on, to see the logs.
 
 needs passwordless ssh to work. Use an SSH server on windows and use openssh (if in Openwrt see: http://wiki.openwrt.org/inbox/replacingdropbearbyopensshserver) because there are passwordless ssh issues with the ssh client and i've tested it only to work with the openssh ssh client. For a windows SSH sever you may try Bitvise SSH server or do an internet search.
+
+License
+=========
+
+Use GPLv3
+
+TODOs
+=========
+
+Add REST over webpy, control with curl
+Daemonize
+add startapplication(name) functionality to start application "name" on the remote host. (eg. start XBMC after waking, stop Virtualbox VMs before sleeping)
+add demand enumeration (eg. wake sleeping host if network sees a UPNP request, or sleeping host is pinged by someone)
