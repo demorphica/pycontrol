@@ -3,6 +3,14 @@ pycontrol
 
 pycontrol is a set of python scripts that can be used to control a remote Windows pc or HTPC. Power management for idle systems is included. This is meant to be used to remotely turn on (based on demand) turn off (based on load and other reasons, and control (run, kill, manage) other applications and Windows tools from a remote Linux system such as OpenWRT or Raspbian. This purpose of these scripts is to facilitate a smart HTPC and on demand PC system environment
 
+Releaselog
+==========
+
++++GNTP Notifications are now available, use growl++++
++++
++++Code cleanup, added syslog logging+++
++++First commit, procedural code+++
+
 Usage
 =========
 
@@ -36,6 +44,8 @@ depending on which linux distro you are on, to see the logs.
 
 needs passwordless ssh to work. Use an SSH server on windows and use openssh (if in Openwrt see: http://wiki.openwrt.org/inbox/replacingdropbearbyopensshserver) because there are passwordless ssh issues with the ssh client and i've tested it only to work with the openssh ssh client. For a windows SSH sever you may try Bitvise SSH server or do an internet search.
 
+
+
 License
 =========
 
@@ -44,7 +54,9 @@ Use GPLv3
 TODOs
 =========
 
-Add REST over webpy, control with curl<br>
+Use config file
+Add REST API over, control with cron and curl<br>
 Daemonize<br>
-add startapplication(name) functionality to start application "name" on the remote host. (eg. start XBMC after waking, stop Virtualbox VMs before sleeping)<br>
-add demand enumeration (eg. wake sleeping host if network sees a UPNP request, or sleeping host is pinged by someone)<br>
+Add host.startapplication(name) functionality to start application "name" on the remote host. (eg. start XBMC after waking, stop Virtualbox VMs before sleeping)<br>
+Virtualbox management - looking at Oracle supported ways to hook in
+Add demand enumeration (eg. wake sleeping host if network sees a UPNP request, or sleeping host is pinged by someone)<br>
