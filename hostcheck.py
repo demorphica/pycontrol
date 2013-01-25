@@ -17,8 +17,8 @@ def growler(message):
                                 applicationName = "pycontrol",
                                 notifications = ["Host Event"],
                                 defaultNotifications = ["Host Event"],
-                                hostname = "usern",
-                                password = "passw"
+                                hostname = "growluser",
+                                password = "growlpass"
                         )
                 try:
                         growl.register()
