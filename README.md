@@ -60,3 +60,5 @@ Daemonize<br>
 Add host.startapplication(name) functionality to start application "name" on the remote host. (eg. start XBMC after waking, stop Virtualbox VMs before sleeping)<br>
 Virtualbox management - looking at Oracle supported ways to hook in
 Add demand enumeration (eg. wake sleeping host if network sees a UPNP request, or sleeping host is pinged by someone)<br>
+Add power usage widgets via Flex
+Add process controller UI via Flex+FDT - FDT license requested - ++FDT developers, if you see, this, please grant me a license!++
